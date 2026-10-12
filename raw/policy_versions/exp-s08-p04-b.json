@@ -1,0 +1,37 @@
+{
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 19:38:05+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:PutUserPolicy",
+              "iam:ListUsers"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 19:37:47+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "iam:ListUsers",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ]
+}

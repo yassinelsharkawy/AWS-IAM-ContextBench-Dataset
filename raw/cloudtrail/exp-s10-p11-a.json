@@ -1,0 +1,364 @@
+{
+  "experiment_id": "exp-s10-p11-a",
+  "primary_found": true,
+  "total_events": 8,
+  "poll_attempts": 3,
+  "events": [
+    {
+      "EventId": "1c05b92e-6062-4963-ac20-8fc1b1e957fb",
+      "EventName": "ListPolicyVersions",
+      "EventTime": "2026-09-10T11:17:54+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:54Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListPolicyVersions",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-10-p11-a"
+        },
+        "responseElements": null,
+        "requestID": "3cf107c5-5f36-4720-afd9-e7d18d170654",
+        "eventID": "1c05b92e-6062-4963-ac20-8fc1b1e957fb",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "7483eec2-bf29-4eff-bad9-ff6ffe0667d8",
+      "EventName": "GetPolicyVersion",
+      "EventTime": "2026-09-10T11:17:54+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:54Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicyVersion",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-10-p11-a",
+          "versionId": "v1"
+        },
+        "responseElements": null,
+        "requestID": "1713289d-03a8-4ed9-b3a7-a03cd42d12ad",
+        "eventID": "7483eec2-bf29-4eff-bad9-ff6ffe0667d8",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "d9910d5c-9ce5-486a-a270-2aa66a6d7f9b",
+      "EventName": "GetPolicy",
+      "EventTime": "2026-09-10T11:17:54+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:54Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicy",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-10-p11-a"
+        },
+        "responseElements": null,
+        "requestID": "0ad6c9bd-723e-4c06-bd23-0f4db870709f",
+        "eventID": "d9910d5c-9ce5-486a-a270-2aa66a6d7f9b",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "53b6e556-24b5-43d4-9064-bdf6f585a5e5",
+      "EventName": "ListGroups",
+      "EventTime": "2026-09-10T11:17:51+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:51Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListGroups",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "maxItems": 5
+        },
+        "responseElements": null,
+        "requestID": "63e1f3a9-0a24-4fb2-bbb5-d8c37ccb2bb4",
+        "eventID": "53b6e556-24b5-43d4-9064-bdf6f585a5e5",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "717d9a57-88cb-41ae-9781-447536467c31",
+      "EventName": "UpdateAssumeRolePolicy",
+      "EventTime": "2026-09-10T11:17:51+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [
+        {
+          "ResourceType": "AWS::IAM::Role",
+          "ResourceName": "cb3-trust-10-p11-a"
+        }
+      ],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:51Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "UpdateAssumeRolePolicy",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "roleName": "cb3-trust-10-p11-a",
+          "policyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Principal\": {\"AWS\": \"arn:aws:iam::411480503585:user/root\"}, \"Action\": \"sts:AssumeRole\"}]}"
+        },
+        "responseElements": null,
+        "requestID": "a6f5283b-fb83-4eb5-afba-caade077c333",
+        "eventID": "717d9a57-88cb-41ae-9781-447536467c31",
+        "readOnly": false,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRIMARY"
+    },
+    {
+      "EventId": "19a71bf7-ba96-402b-91a7-998c9189e477",
+      "EventName": "ListAttachedRolePolicies",
+      "EventTime": "2026-09-10T11:17:50+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:50Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListAttachedRolePolicies",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "roleName": "cb3-role-10-p11-a"
+        },
+        "responseElements": null,
+        "requestID": "c0838e5a-103d-44a4-afc9-58117d80e516",
+        "eventID": "19a71bf7-ba96-402b-91a7-998c9189e477",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "ab21ba10-e9b4-4502-8e8f-9494585ac93a",
+      "EventName": "ListRoles",
+      "EventTime": "2026-09-10T11:17:50+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:50Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListRoles",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "maxItems": 5
+        },
+        "responseElements": null,
+        "requestID": "2d192568-25bd-4a33-a510-6d2585a64f13",
+        "eventID": "ab21ba10-e9b4-4502-8e8f-9494585ac93a",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "87095479-9076-4537-b8cd-a188984732be",
+      "EventName": "ListPolicies",
+      "EventTime": "2026-09-10T11:17:49+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_001",
+          "userName": "ACTOR_002"
+        },
+        "eventTime": "2026-09-10T08:17:49Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListPolicies",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.39.186",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/e,Z,D,b cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "scope": "Local",
+          "onlyAttached": false,
+          "maxItems": 5
+        },
+        "responseElements": null,
+        "requestID": "6fba3e8e-b0b3-43bb-8a28-2d039cf9aa62",
+        "eventID": "87095479-9076-4537-b8cd-a188984732be",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    }
+  ],
+  "classification": {
+    "PRIMARY": 1,
+    "PRECEDING_CONTEXT": 3,
+    "FOLLOWING_CONTEXT": 4,
+    "BACKGROUND": 0,
+    "UNCLASSIFIED": 0
+  },
+  "context_hash": "5bdac566e2a42a07",
+  "collection_start": "2026-09-10T08:17:47.721278+00:00",
+  "collection_end": "2026-09-10T08:19:26.810458+00:00",
+  "cloudtrail_window_seconds": 99.08918
+}

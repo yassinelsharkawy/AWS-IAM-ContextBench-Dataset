@@ -1,0 +1,46 @@
+{
+  "env_id": "ENV13",
+  "env_name": "mixed_sensitive",
+  "description": "Mixed: S3 + KMS + SSM + Secrets = broad blast radius",
+  "experiment_id": "exp-s04-e01-eb",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T02:30:24.538671+00:00",
+  "resources": {
+    "s3_bucket": {
+      "name": "cb3-data-s04e01eb-503585",
+      "arn": "arn:aws:s3:::cb3-data-s04e01eb-503585"
+    },
+    "kms_key": {
+      "id": "d51a5ee4-2d8c-4aac-ae0e-d6fb2c80378c",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/d51a5ee4-2d8c-4aac-ae0e-d6fb2c80378c",
+      "alias": "alias/cb3-key-s04e01eb"
+    },
+    "secret": {
+      "name": "cb3/secret/s04e01eb",
+      "arn": "arn:aws:secretsmanager:us-east-1:411480503585:secret:cb3/secret/s04e01eb-OYetp3"
+    },
+    "ssm_parameters": [
+      {
+        "name": "/cb3/s04e01eb/db-host"
+      },
+      {
+        "name": "/cb3/s04e01eb/api-endpoint"
+      }
+    ]
+  },
+  "topology": {
+    "has_admin_role": false,
+    "has_kms": true,
+    "has_secrets_manager": true,
+    "has_ssm": true,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": true,
+    "privileged_role_count": 0,
+    "sensitive_resource_count": 3,
+    "resource_count": 3
+  },
+  "environment_hash": "9eedb5e0c0335f76"
+}

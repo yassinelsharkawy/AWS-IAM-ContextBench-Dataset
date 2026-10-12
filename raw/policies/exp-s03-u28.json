@@ -1,0 +1,48 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol--s03-u28",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol--s03-u28",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-10 06:05:27+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 06:05:44+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "kms:Decrypt",
+              "kms:Encrypt"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 06:05:27+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "kms:Decrypt",
+              "kms:Encrypt"
+            ],
+            "Resource": "arn:aws:kms:us-east-1:*:key/specific-key-id"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

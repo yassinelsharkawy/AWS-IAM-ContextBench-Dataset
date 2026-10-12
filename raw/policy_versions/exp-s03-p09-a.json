@@ -1,0 +1,34 @@
+{
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 11:50:58+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "ssm:GetParameter",
+            "Resource": "arn:aws:ssm:*:*:parameter/*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 11:50:41+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "ssm:GetParameter",
+            "Resource": "arn:aws:ssm:*:*:parameter/app/config/*"
+          }
+        ]
+      }
+    }
+  ]
+}

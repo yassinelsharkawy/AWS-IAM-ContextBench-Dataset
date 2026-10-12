@@ -1,0 +1,37 @@
+{
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 05:12:48+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreatePolicyVersion",
+              "iam:ListPolicies"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 05:12:31+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "iam:ListPolicies",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol--s13-u25",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol--s13-u25",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-10 05:56:18+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 05:56:36+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::app-bucket/public/*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 05:56:18+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

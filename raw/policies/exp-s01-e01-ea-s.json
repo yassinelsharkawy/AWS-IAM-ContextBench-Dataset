@@ -1,0 +1,47 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol-e01-ea-s",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol-e01-ea-s",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-10 01:38:26+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 01:38:45+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "ssm:DescribeParameters",
+              "ssm:ListTagsForResource"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 01:38:26+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "ssm:DescribeParameters"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

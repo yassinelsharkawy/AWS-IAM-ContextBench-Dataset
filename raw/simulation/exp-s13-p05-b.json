@@ -1,0 +1,155 @@
+{
+  "allowed": [
+    "iam:SetDefaultPolicyVersion",
+    "iam:AttachRolePolicy",
+    "iam:PutRolePolicy",
+    "iam:CreateAccessKey",
+    "iam:PassRole",
+    "iam:UpdateAssumeRolePolicy",
+    "iam:AddUserToGroup",
+    "iam:AttachUserPolicy",
+    "iam:PutUserPolicy",
+    "s3:GetObject",
+    "s3:PutObject",
+    "s3:DeleteObject",
+    "s3:DeleteBucket",
+    "s3:ListBucket",
+    "s3:ListAllMyBuckets",
+    "s3:PutBucketPolicy",
+    "kms:Decrypt",
+    "kms:Encrypt"
+  ],
+  "denied": [
+    "iam:CreatePolicyVersion",
+    "iam:DeleteRolePermissionsBoundary",
+    "secretsmanager:GetSecretValue",
+    "ssm:GetParameter",
+    "kms:ScheduleKeyDeletion",
+    "lambda:CreateFunction",
+    "lambda:InvokeFunction",
+    "ec2:RunInstances",
+    "sts:AssumeRole",
+    "cloudtrail:StopLogging",
+    "cloudtrail:DeleteTrail"
+  ],
+  "raw": [
+    {
+      "action": "iam:CreatePolicyVersion",
+      "decision": "explicitDeny"
+    },
+    {
+      "action": "iam:SetDefaultPolicyVersion",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:AttachRolePolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:PutRolePolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:CreateAccessKey",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:PassRole",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:UpdateAssumeRolePolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:DeleteRolePermissionsBoundary",
+      "decision": "explicitDeny"
+    },
+    {
+      "action": "iam:AddUserToGroup",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:AttachUserPolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "iam:PutUserPolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:GetObject",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:PutObject",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:DeleteObject",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:DeleteBucket",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:ListBucket",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:ListAllMyBuckets",
+      "decision": "allowed"
+    },
+    {
+      "action": "s3:PutBucketPolicy",
+      "decision": "allowed"
+    },
+    {
+      "action": "secretsmanager:GetSecretValue",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "ssm:GetParameter",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "kms:Decrypt",
+      "decision": "allowed"
+    },
+    {
+      "action": "kms:Encrypt",
+      "decision": "allowed"
+    },
+    {
+      "action": "kms:ScheduleKeyDeletion",
+      "decision": "explicitDeny"
+    },
+    {
+      "action": "lambda:CreateFunction",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "lambda:InvokeFunction",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "ec2:RunInstances",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "sts:AssumeRole",
+      "decision": "implicitDeny"
+    },
+    {
+      "action": "cloudtrail:StopLogging",
+      "decision": "explicitDeny"
+    },
+    {
+      "action": "cloudtrail:DeleteTrail",
+      "decision": "implicitDeny"
+    }
+  ],
+  "errors": [],
+  "source": "AWS_SIMULATION"
+}

@@ -1,0 +1,34 @@
+{
+  "env_id": "ENV05",
+  "env_name": "kms_protected",
+  "description": "KMS: encryption key present, key policy relevant",
+  "experiment_id": "exp-s13-e01-eb",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T04:44:01.352392+00:00",
+  "resources": {
+    "s3_bucket": {
+      "name": "cb3-data-s13e01eb-503585",
+      "arn": "arn:aws:s3:::cb3-data-s13e01eb-503585"
+    },
+    "kms_key": {
+      "id": "e95c85ef-4964-46dd-84e7-5ff1f4453bd6",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/e95c85ef-4964-46dd-84e7-5ff1f4453bd6",
+      "alias": "alias/cb3-key-s13e01eb"
+    }
+  },
+  "topology": {
+    "has_admin_role": false,
+    "has_kms": true,
+    "has_secrets_manager": false,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": true,
+    "privileged_role_count": 0,
+    "sensitive_resource_count": 2,
+    "resource_count": 2
+  },
+  "environment_hash": "877761518b58966f"
+}

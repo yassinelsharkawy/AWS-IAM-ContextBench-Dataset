@@ -1,0 +1,42 @@
+{
+  "env_id": "ENV10",
+  "env_name": "escalation_path",
+  "description": "Escalation: privileged role + sensitive resources reachable",
+  "experiment_id": "exp-s08-p09-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-09T20:03:08.305161+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s08p09",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s08p09"
+    },
+    "s3_bucket": {
+      "name": "cb3-data-s08p09-503585",
+      "arn": "arn:aws:s3:::cb3-data-s08p09-503585"
+    },
+    "kms_key": {
+      "id": "3b21738f-2b37-45b7-b0e9-884f85afd95a",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/3b21738f-2b37-45b7-b0e9-884f85afd95a",
+      "alias": "alias/cb3-key-s08p09"
+    },
+    "secret": {
+      "name": "cb3/secret/s08p09",
+      "arn": "arn:aws:secretsmanager:us-east-1:411480503585:secret:cb3/secret/s08p09-Vatqul"
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": true,
+    "has_secrets_manager": true,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": true,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 3,
+    "resource_count": 4
+  },
+  "environment_hash": "a8fae6679e73f583"
+}

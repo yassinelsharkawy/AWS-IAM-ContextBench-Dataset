@@ -1,0 +1,71 @@
+{
+  "env_id": "ENV16",
+  "env_name": "full_enterprise",
+  "description": "Full: admin + boundary + KMS + Secrets + SSM + S3 + cross-account",
+  "experiment_id": "exp-s02-p15-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-09T10:54:30.843914Z",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin--p15-env",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin--p15-env"
+    },
+    "s3_bucket": {
+      "name": "cb3-data--p15-env-503585",
+      "arn": "arn:aws:s3:::cb3-data--p15-env-503585"
+    },
+    "kms_key": {
+      "id": "a4e72978-4886-4d7e-8f45-9ddee02998e5",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/a4e72978-4886-4d7e-8f45-9ddee02998e5",
+      "alias": "alias/cb3-key--p15-env"
+    },
+    "secret": {
+      "name": "cb3/secret/-p15-env",
+      "arn": "arn:aws:secretsmanager:us-east-1:411480503585:secret:cb3/secret/-p15-env-3IN4s3"
+    },
+    "ssm_parameters": [
+      {
+        "name": "/cb3/-p15-env/db-host"
+      },
+      {
+        "name": "/cb3/-p15-env/api-endpoint"
+      }
+    ],
+    "permissions_boundary": {
+      "name": "cb3-boundary--p15-env",
+      "arn": "arn:aws:iam::411480503585:policy/cb3-boundary--p15-env",
+      "policy_document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetObject",
+              "s3:ListBucket",
+              "iam:ListUsers",
+              "iam:ListRoles",
+              "iam:GetPolicy",
+              "iam:ListPolicies"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": true,
+    "has_secrets_manager": true,
+    "has_ssm": true,
+    "has_lambda": false,
+    "has_permissions_boundary": true,
+    "has_cross_account_trust": false,
+    "has_s3": true,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 3,
+    "resource_count": 5
+  },
+  "environment_hash": "e1f72e21646bcf0a"
+}

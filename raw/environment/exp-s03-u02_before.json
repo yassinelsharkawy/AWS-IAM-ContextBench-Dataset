@@ -1,0 +1,29 @@
+{
+  "env_id": "ENV03",
+  "env_name": "privileged_admin",
+  "description": "Privileged: admin role reachable in environment",
+  "experiment_id": "exp-s03-u02-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T04:58:34.589450+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s03u02",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s03u02"
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": false,
+    "has_secrets_manager": false,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": false,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 0,
+    "resource_count": 1
+  },
+  "environment_hash": "1a6f3afab67d871b"
+}

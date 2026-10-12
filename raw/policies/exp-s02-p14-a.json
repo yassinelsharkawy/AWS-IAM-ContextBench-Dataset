@@ -1,0 +1,45 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol-02-p14-a",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol-02-p14-a",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-09 10:49:21+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 10:49:38+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": [
+              "arn:aws:s3:::public-assets/*",
+              "arn:aws:s3:::static-content/*"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 10:49:21+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::public-assets/*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

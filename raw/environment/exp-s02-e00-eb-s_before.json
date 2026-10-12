@@ -1,0 +1,33 @@
+{
+  "env_id": "ENV11",
+  "env_name": "multi_admin",
+  "description": "Multi-admin: multiple administrative roles",
+  "experiment_id": "exp-s02-e00-eb",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T01:52:15.772715+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s02e00eb",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s02e00eb"
+    },
+    "admin_role_2": {
+      "name": "cb3-admin2-s02e00eb",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin2-s02e00eb"
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": false,
+    "has_secrets_manager": false,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": false,
+    "privileged_role_count": 2,
+    "sensitive_resource_count": 0,
+    "resource_count": 2
+  },
+  "environment_hash": "374a8467dfd30f29"
+}

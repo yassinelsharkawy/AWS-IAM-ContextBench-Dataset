@@ -1,0 +1,34 @@
+{
+  "env_id": "ENV15",
+  "env_name": "lambda_admin_path",
+  "description": "Lambda escalation: Lambda + PassRole + privileged execution role",
+  "experiment_id": "exp-s06-p14-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-09T17:31:37.106469+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s06p14",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s06p14"
+    },
+    "lambda_function": {
+      "name": "cb3-func-s06p14",
+      "arn": "arn:aws:lambda:us-east-1:411480503585:function:cb3-func-s06p14",
+      "execution_role": "cb3-lambda-exec-s06p14"
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": false,
+    "has_secrets_manager": false,
+    "has_ssm": false,
+    "has_lambda": true,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": false,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 1,
+    "resource_count": 2
+  },
+  "environment_hash": "945b6dd2f4fe33cc"
+}

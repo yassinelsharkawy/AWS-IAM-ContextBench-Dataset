@@ -1,0 +1,42 @@
+{
+  "env_id": "ENV10",
+  "env_name": "escalation_path",
+  "description": "Escalation: privileged role + sensitive resources reachable",
+  "experiment_id": "exp-s10-u09-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T10:24:17.682025+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s10u09",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s10u09"
+    },
+    "s3_bucket": {
+      "name": "cb3-data-s10u09-503585",
+      "arn": "arn:aws:s3:::cb3-data-s10u09-503585"
+    },
+    "kms_key": {
+      "id": "03b7b67d-318c-4de9-beab-b695acd91389",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/03b7b67d-318c-4de9-beab-b695acd91389",
+      "alias": "alias/cb3-key-s10u09"
+    },
+    "secret": {
+      "name": "cb3/secret/s10u09",
+      "arn": "arn:aws:secretsmanager:us-east-1:411480503585:secret:cb3/secret/s10u09-w8K87i"
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": true,
+    "has_secrets_manager": true,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": false,
+    "has_s3": true,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 3,
+    "resource_count": 4
+  },
+  "environment_hash": "a8fae6679e73f583"
+}

@@ -1,0 +1,46 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol-06-p01-b",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol-06-p01-b",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-09 15:46:25+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 15:46:44+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "cloudtrail:DescribeTrails",
+              "cloudtrail:StopLogging",
+              "cloudtrail:DeleteTrail"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 15:46:25+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "cloudtrail:DescribeTrails",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,835 @@
+{
+  "experiment_id": "exp-s08-p12-b",
+  "primary_found": true,
+  "total_events": 15,
+  "poll_attempts": 4,
+  "events": [
+    {
+      "EventId": "39ccdb96-2280-395e-8092-f40707ab0ff5",
+      "EventName": "AssumeRole",
+      "EventTime": "2026-09-09T23:24:03+03:00",
+      "EventSource": "sts.amazonaws.com",
+      "Username": "",
+      "Resources": [
+        {
+          "ResourceType": "AWS::IAM::AccessKey",
+          "ResourceName": "ASIAV7TRGGUQ7IYWI7JT"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::IAM::Role",
+          "ResourceName": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AWSService",
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:24:03Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+          "roleSessionName": "resource-explorer-2"
+        },
+        "responseElements": {
+          "credentials": {
+            "accessKeyId": "ASIAV7TRGGUQ7IYWI7JT",
+            "sessionToken": "IQoJb3JpZ2luX2VjEK3//////////wEaCXVzLWVhc3QtMSJIMEYCIQDAEpKZmldtyM9lOVnsGuXJBRxS37JW0t5i5hbqOfj8KgIhAN9taliKI9Wb4u4FSiWWGhzcAoQkFdKuzOocXEYNmIXOKvICCHYQABoMNDExNDgwNTAzNTg1IgzkBKXMDlL7KwtqrVwqzwLFJbHBVnIAsqMOSkOFsebq/jv+MQO8pfRNhz3kzOoudVPjq7eUKU2/N6Y/3T7f63fNR+sPOdRzj2H6moyjZ33zCqsOLWIgd2XB28x89YaTpJsMeB9qLBYJVu5NAcegcnZ8ZvYXCTd3d4eo8GJ6zkirtFgjNw+3jMiNC5f8eprw9tj3f401YFY2OF3CrGUlXYq4OCdfZdGBi4QbARkZLnEaQAJWu1LoObszX/+tchkVWCi+pcq6W/1jayLjofKvsWD1b1iVfrw2HILOH4iu+BenLLQWgtERMOaTvbnzT4/BOoIChhHWyaJWGwxHYEVVFbGjGURghqZclTQKWmrwMWKnwAsfO5/A8A2lnJLBf1FIByd27mM47vLJ0OUvHl2zwj4Fi0WgumcrEFd4Qx5AtWLQ93fbFZ48jL1flj4/RB7P8DvLkarr2iCdMWiCNAFcezDjgIfVBjq8AdH49IIMJK+Y/wM5I95Rht8XDpsn4NcWETSVlEH4cS3vU87gy4DhFEwCs3Rh2lAB3i/W4s/YvuZ7WvF+0vm1t3+XmMH6CsRWQ7LOdFFWhKZ2ssffmxO/Tpuf6HsoiEx3ulbqdbHAKQwLte1f+L3KAZHPLdVKXZfjZ9woj6kjbFIQHfuMXrmhv+GdUMnULAeaDctCb9B6F0MSzhLffSGAIDP3rGxtGVZzLGS9Z67SCgCAlGxd8ru8oMxiQXad",
+            "expiration": "2026-09-09T21:24:03Z"
+          },
+          "assumedRoleUser": {
+            "assumedRoleId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+            "arn": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+          },
+          "packedPolicySize": 22,
+          "sessionTokenUtilization": 22,
+          "sessionTokenSize": 904
+        },
+        "additionalEventData": {
+          "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzg4OTg1NDQzNDY3OlI6YXdxNHRzdW0="
+        },
+        "requestID": "09db6b36-556f-4c69-b9bb-5aed6f23bdd2",
+        "eventID": "39ccdb96-2280-395e-8092-f40707ab0ff5",
+        "readOnly": true,
+        "resources": [
+          {
+            "accountId": "411480503585",
+            "type": "AWS::IAM::Role",
+            "ARN": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+          }
+        ],
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "sharedEventID": "d32bc424-926e-47e9-93d9-49fb4df2b013",
+        "eventCategory": "Management"
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "606dd64c-9255-4a9e-883d-e316ccfe05a3",
+      "EventName": "GetPolicyVersion",
+      "EventTime": "2026-09-09T23:24:00+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:24:00Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicyVersion",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b",
+          "versionId": "v1"
+        },
+        "responseElements": null,
+        "requestID": "cb781d12-5312-4c83-a5f6-0cbedaef390e",
+        "eventID": "606dd64c-9255-4a9e-883d-e316ccfe05a3",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "d519cebf-b349-4480-9d3d-449fa04466a8",
+      "EventName": "GetPolicyVersion",
+      "EventTime": "2026-09-09T23:24:00+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:24:00Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicyVersion",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b",
+          "versionId": "v2"
+        },
+        "responseElements": null,
+        "requestID": "d2c827a9-82f5-4317-8280-f817b10bfc2b",
+        "eventID": "d519cebf-b349-4480-9d3d-449fa04466a8",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "03f8614f-1409-4892-a398-da706ae8c5d0",
+      "EventName": "GetPolicy",
+      "EventTime": "2026-09-09T23:23:59+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:23:59Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicy",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b"
+        },
+        "responseElements": null,
+        "requestID": "d4fb3fef-a39e-4659-a3fa-45c6a9e217a6",
+        "eventID": "03f8614f-1409-4892-a398-da706ae8c5d0",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "997e1472-415e-4ed7-bdbb-83327ed8b782",
+      "EventName": "ListPolicyVersions",
+      "EventTime": "2026-09-09T23:23:59+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:23:59Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListPolicyVersions",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b"
+        },
+        "responseElements": null,
+        "requestID": "eabcdd6f-2856-4e9b-94fc-312551998aef",
+        "eventID": "997e1472-415e-4ed7-bdbb-83327ed8b782",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "FOLLOWING_CONTEXT"
+    },
+    {
+      "EventId": "7520bdba-c6bf-435f-8b52-5492e2c9c2fc",
+      "EventName": "CreatePolicyVersion",
+      "EventTime": "2026-09-09T23:23:57+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [
+        {
+          "ResourceType": "AWS::IAM::Policy",
+          "ResourceName": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b"
+        }
+      ],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:23:57Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "CreatePolicyVersion",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-b",
+          "policyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Action\": [\"iam:AttachUserPolicy\", \"iam:GetRole\"], \"Resource\": \"*\"}]}",
+          "setAsDefault": true
+        },
+        "responseElements": {
+          "policyVersion": {
+            "versionId": "v2",
+            "isDefaultVersion": true,
+            "createDate": "2026-09-09T20:23:57Z"
+          }
+        },
+        "requestID": "df1823e6-ea9f-42ce-ad56-959a8aa69d0e",
+        "eventID": "7520bdba-c6bf-435f-8b52-5492e2c9c2fc",
+        "readOnly": false,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRIMARY"
+    },
+    {
+      "EventId": "6c123929-f0ab-43fc-93f4-b03a20a2a583",
+      "EventName": "GetRole",
+      "EventTime": "2026-09-09T23:23:53+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_270",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:52Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:53Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "The role with name cb3-xacct-s08p11 cannot be found.",
+        "requestParameters": {
+          "roleName": "cb3-xacct-s08p11"
+        },
+        "responseElements": null,
+        "requestID": "b6db7e9c-bbc1-4949-a9af-505e0935d8c9",
+        "eventID": "6c123929-f0ab-43fc-93f4-b03a20a2a583",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "9864af3f-4928-4253-8400-c17d11bda9bd",
+      "EventName": "GetRole",
+      "EventTime": "2026-09-09T23:23:53+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_271",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:52Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:53Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "The role with name cb3-role-08-p12-a cannot be found.",
+        "requestParameters": {
+          "roleName": "cb3-role-08-p12-a"
+        },
+        "responseElements": null,
+        "requestID": "c3ec5db5-3878-4cfe-8f91-d97a84edac02",
+        "eventID": "9864af3f-4928-4253-8400-c17d11bda9bd",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "af129b0d-5a4a-4a3d-94c4-379be6e6832f",
+      "EventName": "GetRole",
+      "EventTime": "2026-09-09T23:23:53+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_272",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:52Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:53Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "The role with name cb3-role-08-p12-a cannot be found.",
+        "requestParameters": {
+          "roleName": "cb3-role-08-p12-a"
+        },
+        "responseElements": null,
+        "requestID": "209b15a8-563d-42c5-b383-302c3cad91ad",
+        "eventID": "af129b0d-5a4a-4a3d-94c4-379be6e6832f",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "3d9b0ef6-59c8-3465-9bfe-6eed8c22e11d",
+      "EventName": "AssumeRole",
+      "EventTime": "2026-09-09T23:23:52+03:00",
+      "EventSource": "sts.amazonaws.com",
+      "Username": "",
+      "Resources": [
+        {
+          "ResourceType": "AWS::IAM::AccessKey",
+          "ResourceName": "ASIAV7TRGGUQ5DI3VGDE"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::IAM::Role",
+          "ResourceName": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AWSService",
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:52Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+          "roleSessionName": "resource-explorer-2"
+        },
+        "responseElements": {
+          "credentials": {
+            "accessKeyId": "ASIAV7TRGGUQ5DI3VGDE",
+            "sessionToken": "IQoJb3JpZ2luX2VjEK3//////////wEaCXVzLWVhc3QtMSJIMEYCIQCxrXr8akeMlGJz1N90kFfczJnTr8ASFwtNlMKiWnJ2FwIhAP8go4RtXe/x3QCzi+jA/Sbd0A8Fg8KK7eKJcihuDZaiKvICCHYQABoMNDExNDgwNTAzNTg1Igw0r4Sqhj5l3JT/I5sqzwKgRuLAO1bxDGoG1B4vKYmrqM61xJAuu6wHwaE5rOHlaF11Yxz7hqqiqDk5Gmu+KdgKr2Ig1BZxx3Ukp2Lr0FC/iFFxDiWvGTsmFoA3IQ+aD94Uv9EnfqAAZHQgDNbxtER/eI1Kk1+1dL/t1M61hyIw33Sv9HxM+h4GIh0FC2YzbYGqhPYfk4Al4XAOhTRx1hO0sKMlowSBaDlRIUiYcU/LyOI8FXKqErQbH9FuqieyeScbrdC65tMXYQGzZ5fI7/UsJhCYE3gt3QhbNJbU6HXQO0n+lgYCf3GOYQ7L9883kPOfEo5a0G+gEQj+x3etWuJMIR8uUvKMw5VP+hogzv35W/bQX8ETp3unuJWSQspyL2ReYVXzGrUcz2u4zZUZzPLMaXsZTyaH44neVCW47fmRfhDBVeGQTorGTHbbaGiCkTtnhKmiO9s0P8tIaCwRFTDYgIfVBjq8AZ5nO0k2hUOFjqa8gGDaDrVQf9AdcepkP9VKFuEK3m9svEgWC81TKQEdGBhRxrSgbynAYUh//brneaWU7dBL999SLivmbliDWw5JN9TnSG7xxb/RG9H6FuOeuiyAgt71pTQ+hfSdvZu69/w8pqGLYoecjVHRPDzpEuXM6mpPciQcNLyIRO8FKyplMwEOqks3sWG0C3ma2V3Kip5/ELUmxf8GwR1C81FrjntOpd4Li0uvH7b7ZgOXJEMNJeYi",
+            "expiration": "2026-09-09T21:23:52Z"
+          },
+          "assumedRoleUser": {
+            "assumedRoleId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+            "arn": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+          },
+          "packedPolicySize": 22,
+          "sessionTokenUtilization": 22,
+          "sessionTokenSize": 904
+        },
+        "additionalEventData": {
+          "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzg4OTg1NDMyODg2OlI6M2ljWE9kcnk="
+        },
+        "requestID": "91dfc848-fd4a-4db1-937d-410c8cad37b7",
+        "eventID": "3d9b0ef6-59c8-3465-9bfe-6eed8c22e11d",
+        "readOnly": true,
+        "resources": [
+          {
+            "accountId": "411480503585",
+            "type": "AWS::IAM::Role",
+            "ARN": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+          }
+        ],
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "sharedEventID": "867b81dc-ba6e-4f45-b4f8-f3f8313d3888",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "5df4a474-7f14-48bf-aae8-5d471e42f9ad",
+      "EventName": "GetPolicy",
+      "EventTime": "2026-09-09T23:23:52+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_273",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:51Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:52Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicy",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "Policy arn:aws:iam::411480503585:policy/cb3-pol-08-p12-a was not found.",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p12-a"
+        },
+        "responseElements": null,
+        "requestID": "49916982-8ee7-4a67-8a3c-ee60950496c6",
+        "eventID": "5df4a474-7f14-48bf-aae8-5d471e42f9ad",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "d4e175a0-3954-4e3c-a7fb-9354845065c9",
+      "EventName": "GetRole",
+      "EventTime": "2026-09-09T23:23:52+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_274",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:52Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:52Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "The role with name cb3-role-08-p11-b cannot be found.",
+        "requestParameters": {
+          "roleName": "cb3-role-08-p11-b"
+        },
+        "responseElements": null,
+        "requestID": "85327389-9092-4eaf-bef4-bd42f510d55a",
+        "eventID": "d4e175a0-3954-4e3c-a7fb-9354845065c9",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "36225cdc-26c9-4691-821b-98aa20f8b5e5",
+      "EventName": "GetPolicy",
+      "EventTime": "2026-09-09T23:23:51+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "resource-explorer-2",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AssumedRole",
+          "principalId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+          "arn": "ACTOR_002",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_273",
+          "sessionContext": {
+            "sessionIssuer": {
+              "type": "Role",
+              "principalId": "AROAV7TRGGUQTNSRJY6MI",
+              "arn": "ACTOR_003",
+              "accountId": "411480503585",
+              "userName": "ROLE_001"
+            },
+            "attributes": {
+              "creationDate": "2026-09-09T20:23:51Z",
+              "mfaAuthenticated": "false"
+            }
+          },
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:51Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "GetPolicy",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "errorCode": "NoSuchEntityException",
+        "errorMessage": "Policy arn:aws:iam::411480503585:policy/cb3-pol-08-p11-b was not found.",
+        "requestParameters": {
+          "policyArn": "arn:aws:iam::411480503585:policy/cb3-pol-08-p11-b"
+        },
+        "responseElements": null,
+        "requestID": "5b1290a2-1788-41a4-912c-f6bbc7f4d772",
+        "eventID": "36225cdc-26c9-4691-821b-98aa20f8b5e5",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "365f7f77-0184-41a9-b924-5a85de3ef669",
+      "EventName": "ListUsers",
+      "EventTime": "2026-09-09T23:23:51+03:00",
+      "EventSource": "iam.amazonaws.com",
+      "Username": "root",
+      "Resources": [],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "IAMUser",
+          "principalId": "AIDAV7TRGGUQWYGZLFTYC",
+          "arn": "ACTOR_001",
+          "accountId": "411480503585",
+          "accessKeyId": "ACCESSKEY_002",
+          "userName": "ACTOR_004"
+        },
+        "eventTime": "2026-09-09T20:23:51Z",
+        "eventSource": "iam.amazonaws.com",
+        "eventName": "ListUsers",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "197.37.25.210",
+        "userAgent": "Boto3/1.43.89 md/Botocore#1.43.89 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.12.4 md/pyimpl#CPython m/D,b,Z,e cfg/retry-mode#legacy Botocore/1.43.89",
+        "requestParameters": {
+          "maxItems": 3
+        },
+        "responseElements": null,
+        "requestID": "c1d8f6ef-342c-438a-a92a-9db6201c4a8e",
+        "eventID": "365f7f77-0184-41a9-b924-5a85de3ef669",
+        "readOnly": true,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "eventCategory": "Management",
+        "tlsDetails": {
+          "tlsVersion": "TLSv1.3",
+          "cipherSuite": "TLS_AES_128_GCM_SHA256",
+          "clientProvidedHostHeader": "iam.amazonaws.com"
+        }
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    },
+    {
+      "EventId": "c8085c6b-12bf-3c23-805e-6efc078521f2",
+      "EventName": "AssumeRole",
+      "EventTime": "2026-09-09T23:23:51+03:00",
+      "EventSource": "sts.amazonaws.com",
+      "Username": "",
+      "Resources": [
+        {
+          "ResourceType": "AWS::IAM::AccessKey",
+          "ResourceName": "ASIAV7TRGGUQ3C26AK4N"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::STS::AssumedRole",
+          "ResourceName": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        },
+        {
+          "ResourceType": "AWS::IAM::Role",
+          "ResourceName": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "raw": {
+        "eventVersion": "1.11",
+        "userIdentity": {
+          "type": "AWSService",
+          "invokedBy": "resource-explorer-2.amazonaws.com"
+        },
+        "eventTime": "2026-09-09T20:23:51Z",
+        "eventSource": "sts.amazonaws.com",
+        "eventName": "AssumeRole",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+        "userAgent": "resource-explorer-2.amazonaws.com",
+        "requestParameters": {
+          "roleArn": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+          "roleSessionName": "resource-explorer-2"
+        },
+        "responseElements": {
+          "credentials": {
+            "accessKeyId": "ASIAV7TRGGUQ3C26AK4N",
+            "sessionToken": "IQoJb3JpZ2luX2VjEK3//////////wEaCXVzLWVhc3QtMSJGMEQCIBQJVF0v6ZTbbWSlWuE1fcflN1LHj+ipPsiWrPDWDsmHAiAYCvPOLM/oQPKSz1MxzxXRK9Jz3KD9mIr/5kYoel8KsCryAgh2EAAaDDQxMTQ4MDUwMzU4NSIMtA+CcJCUeDpGq4uMKs8CT7zTjWADxkp03Jtg6nAlxulM7/c5lZdhzw8Q8w7CMyyCEeUFy9Aga5B1n6lx4A3XL8KjYSxLE3wqEDjE/nkpAUgxUc7SmNPePB5m7a6/RE5PHSva96NPN3AVUuAcQ7+r7D7WSTzb7QNjAP3FzxaR6Cnx7un+3lSPW8UL+vaPi065/zYpWu976yK0s4MdqkjDMmv5YfTVH/ilgyUGTbKC+EmvKFOI+dsewbLqjP4S7jlg2wRTYOWx9Ti3mgM2srKp3UnW+i26nm6VmSP2b+Mhxq3UqYIOdW6YBFHBur2fXn8hLXFeWVsim9V3vECvQRTEv021Cl8ITfLh0e5a0FAGwEe1GNxa84tAdxoSMARThW/UQFD2vxujrpjQ/ZX4AHRp5FvK3AoCyl2ZjTGsM4lyUR9oQ0k/9V1IAuv9PavEaZ/VzSwmbS5toSefNbuv7lYw14CH1QY6vgEdfK4/dBs1bxABQlqO7LytqDrTIrCgjKhuwk6ObHdlBGxaX1/DDfnwUf+d/EZxUR8ZetjDHLvelhdrGM92vAnTAjI88sHvVxpMBRbJPCIx327WBV9G0H1jK4kL/qlq2SA5KEoZXkHdcISHtL2+PSu0BI2vsiuw/C4/y2G+7qrfZGIGk6rAUZFbgpKULyzo6ox2/2vdoPCSMr+gIhDBoq6ffcVjEKKycBak/13T9pzxPIk3mPTcFEl7OV1MG3xU",
+            "expiration": "2026-09-09T21:23:51Z"
+          },
+          "assumedRoleUser": {
+            "assumedRoleId": "AROAV7TRGGUQTNSRJY6MI:resource-explorer-2",
+            "arn": "arn:aws:sts::411480503585:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+          },
+          "packedPolicySize": 22,
+          "sessionTokenUtilization": 22,
+          "sessionTokenSize": 904
+        },
+        "additionalEventData": {
+          "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzg4OTg1NDMxODUxOlI6SVVXb2NVckE="
+        },
+        "requestID": "3772eb05-e8f9-4938-8bf4-0f322d79be18",
+        "eventID": "c8085c6b-12bf-3c23-805e-6efc078521f2",
+        "readOnly": true,
+        "resources": [
+          {
+            "accountId": "411480503585",
+            "type": "AWS::IAM::Role",
+            "ARN": "arn:aws:iam::411480503585:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+          }
+        ],
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "411480503585",
+        "sharedEventID": "8bba11cc-4584-4a9e-87f3-92a1a8d33431",
+        "eventCategory": "Management"
+      },
+      "_classification": "PRECEDING_CONTEXT"
+    }
+  ],
+  "classification": {
+    "PRIMARY": 1,
+    "PRECEDING_CONTEXT": 9,
+    "FOLLOWING_CONTEXT": 5,
+    "BACKGROUND": 0,
+    "UNCLASSIFIED": 0
+  },
+  "context_hash": "8dbce1349a62a104",
+  "collection_start": "2026-09-09T20:23:49.703403+00:00",
+  "collection_end": "2026-09-09T20:26:17.451635+00:00",
+  "cloudtrail_window_seconds": 147.748232
+}

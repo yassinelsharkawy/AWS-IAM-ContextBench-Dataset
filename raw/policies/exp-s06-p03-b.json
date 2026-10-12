@@ -1,0 +1,46 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol-06-p03-b",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol-06-p03-b",
+    "DefaultVersionId": "v2",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-09 16:32:23+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 16:32:41+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "guardduty:ListDetectors",
+              "guardduty:DeleteDetector",
+              "guardduty:DeleteMembers"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 16:32:23+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "guardduty:ListDetectors",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

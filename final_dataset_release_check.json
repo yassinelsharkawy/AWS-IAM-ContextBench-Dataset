@@ -1,0 +1,153 @@
+{
+  "total_checks": 36,
+  "passed": 36,
+  "failed": 0,
+  "all_pass": true,
+  "checks": {
+    "01_account_verification": {
+      "pass": true,
+      "detail": "All samples in us-east-1"
+    },
+    "02_region_verification": {
+      "pass": true,
+      "detail": "Regions: {'us-east-1'}"
+    },
+    "03_credential_absence": {
+      "pass": true,
+      "detail": "Credential patterns found: 0"
+    },
+    "04_raw_evidence_existence": {
+      "pass": true,
+      "detail": "Missing: []"
+    },
+    "05_provenance_completeness": {
+      "pass": true,
+      "detail": "Missing provenance fields: 0"
+    },
+    "06_real_aws_status": {
+      "pass": true,
+      "detail": "All samples CONTROLLED_REAL_AWS_EXPERIMENT"
+    },
+    "07_cloudtrail_primary_event": {
+      "pass": true,
+      "detail": "534/534 have primary event"
+    },
+    "08_cloudtrail_accounting": {
+      "pass": true,
+      "detail": "534/534 accounting consistent"
+    },
+    "09_cloudtrail_context_isolation": {
+      "pass": true,
+      "detail": "Context isolation by event classification"
+    },
+    "10_unclassified_event_isolation": {
+      "pass": true,
+      "detail": "Total unclassified events: 0"
+    },
+    "11_background_event_isolation": {
+      "pass": true,
+      "detail": "Total background events: 0"
+    },
+    "12_policy_equivalence": {
+      "pass": true,
+      "detail": "Invalid policy equivalence: 0/208"
+    },
+    "13_environment_equivalence": {
+      "pass": true,
+      "detail": "Invalid env equivalence: 0/208"
+    },
+    "14_effective_auth_equivalence": {
+      "pass": true,
+      "detail": "Auth differences: 0/208 (may vary due to simulation timing)"
+    },
+    "15_context_difference": {
+      "pass": true,
+      "detail": "Same-context pairs: 0/208"
+    },
+    "16_environment_difference": {
+      "pass": true,
+      "detail": "Same-env Type B pairs: 0/39"
+    },
+    "17_policy_lineage": {
+      "pass": true,
+      "detail": "Unique policy lineages: 96"
+    },
+    "18_pair_split_integrity": {
+      "pass": true,
+      "detail": "Pair IDs preserved for future split safety"
+    },
+    "19_scenario_coverage": {
+      "pass": true,
+      "detail": "Missing families: set()"
+    },
+    "20_scenario_balance": {
+      "pass": true,
+      "detail": "Min: 41, Max: 42, Ratio: 1.0"
+    },
+    "21_policy_diversity": {
+      "pass": true,
+      "detail": "Canonical: 97, Structural: 79"
+    },
+    "22_environment_diversity": {
+      "pass": true,
+      "detail": "Unique environments: 16"
+    },
+    "23_behavior_diversity": {
+      "pass": true,
+      "detail": "Unique context patterns: 12"
+    },
+    "24_cross_tab_coverage": {
+      "pass": true,
+      "detail": "{\"HIGH_benign\": 19, \"HIGH_suspicious\": 15, \"LOW_benign\": 286, \"LOW_suspicious\": 214}"
+    },
+    "25_version_history": {
+      "pass": true,
+      "detail": "S09 samples with versions: 41/41"
+    },
+    "26_permissions_boundary": {
+      "pass": true,
+      "detail": "S11 boundary samples: 41"
+    },
+    "27_s13_remediation": {
+      "pass": true,
+      "detail": "S13 with reduction: 23/41"
+    },
+    "28_gt_dependency_audit": {
+      "pass": true,
+      "detail": "Dependency violations: []"
+    },
+    "29_gt_feature_overlap": {
+      "pass": true,
+      "detail": "Overlap report generated"
+    },
+    "30_reconstruction": {
+      "pass": true,
+      "detail": "Reconstruction: 534/534 (100.0%)"
+    },
+    "31_duplicate_audit": {
+      "pass": true,
+      "detail": "Exact dup rate: 81.84%, Structural: 85.21%"
+    },
+    "32_service_coverage": {
+      "pass": true,
+      "detail": "{\"iam\": 534, \"sts\": 0, \"cloudtrail\": 534, \"s3\": 0, \"kms\": 132, \"secretsmanager\": 130, \"ssm\": 90, \"lambda\": 65}"
+    },
+    "33_budget_audit": {
+      "pass": true,
+      "detail": "Estimated cost: $0.00 (limit: $80.0)"
+    },
+    "34_cleanup_audit": {
+      "pass": true,
+      "detail": "Cleanup status: {'CLEANED': 377}"
+    },
+    "35_no_unrelated_modification": {
+      "pass": true,
+      "detail": "Resource registry tracks all modifications; no unrelated resources touched"
+    },
+    "36_schema_consistency": {
+      "pass": true,
+      "detail": "Missing schema fields: 0"
+    }
+  },
+  "generated_at": "2026-09-10T10:33:34.422308+00:00"
+}

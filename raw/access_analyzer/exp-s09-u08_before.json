@@ -1,0 +1,18 @@
+{
+  "findings": [
+    {
+      "findingType": "WARNING",
+      "issueCode": "CREATE_SLR_WITH_STAR_IN_ACTION_AND_RESOURCE",
+      "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-create-slr-with-star-in-action-and-resource",
+      "findingDetails": "Using wildcards (*) in the action and the resource can allow creation of unintended service-linked roles because it allows iam:CreateServiceLinkedRole permissions on all resources. We recommend that you specify resource ARNs instead."
+    },
+    {
+      "findingType": "SECURITY_WARNING",
+      "issueCode": "PASS_ROLE_WITH_STAR_IN_ACTION_AND_RESOURCE",
+      "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-action-and-resource",
+      "findingDetails": "Using wildcards (*) in the action and the resource can be overly permissive because it allows iam:PassRole permissions on all resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement."
+    }
+  ],
+  "errors": [],
+  "source": "ACCESS_ANALYZER_VALIDATE_POLICY"
+}

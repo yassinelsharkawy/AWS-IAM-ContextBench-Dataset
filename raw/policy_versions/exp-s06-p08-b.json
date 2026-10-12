@@ -1,0 +1,38 @@
+{
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-09 17:01:12+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "cloudtrail:DescribeTrails",
+              "cloudtrail:StopLogging",
+              "cloudtrail:DeleteTrail"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-09 17:00:53+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "cloudtrail:DescribeTrails",
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ]
+}

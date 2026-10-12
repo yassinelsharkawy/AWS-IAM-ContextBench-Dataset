@@ -1,0 +1,45 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol-e01-ea-s",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol-e01-ea-s",
+    "DefaultVersionId": "v1",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-10 03:50:17+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 03:50:18+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "iam:ListPolicies",
+            "Resource": "*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 03:50:17+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:CreatePolicyVersion",
+              "iam:AttachRolePolicy"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

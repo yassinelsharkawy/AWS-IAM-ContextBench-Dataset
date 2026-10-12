@@ -1,0 +1,42 @@
+{
+  "policy": {
+    "PolicyName": "cb3-pol--s09-u34",
+    "Arn": "arn:aws:iam::411480503585:policy/cb3-pol--s09-u34",
+    "DefaultVersionId": "v1",
+    "AttachmentCount": 1,
+    "CreateDate": "2026-09-10 06:19:06+00:00"
+  },
+  "versions": [
+    {
+      "VersionId": "v2",
+      "IsDefaultVersion": false,
+      "CreateDate": "2026-09-10 06:19:08+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::team-bucket/subfolder/*"
+          }
+        ]
+      }
+    },
+    {
+      "VersionId": "v1",
+      "IsDefaultVersion": true,
+      "CreateDate": "2026-09-10 06:19:06+00:00",
+      "Document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::team-bucket/*"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

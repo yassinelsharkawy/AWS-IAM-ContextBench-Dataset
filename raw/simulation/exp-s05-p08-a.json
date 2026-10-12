@@ -1,0 +1,52 @@
+{
+  "allowed": [],
+  "denied": [],
+  "raw": [],
+  "errors": [
+    {
+      "actions": [
+        "iam:CreatePolicyVersion",
+        "iam:SetDefaultPolicyVersion",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:CreateAccessKey",
+        "iam:PassRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:DeleteRolePermissionsBoundary",
+        "iam:AddUserToGroup",
+        "iam:AttachUserPolicy"
+      ],
+      "error": "Could not connect to the endpoint URL: \"https://iam.amazonaws.com/\""
+    },
+    {
+      "actions": [
+        "iam:PutUserPolicy",
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:DeleteBucket",
+        "s3:ListBucket",
+        "s3:ListAllMyBuckets",
+        "s3:PutBucketPolicy",
+        "secretsmanager:GetSecretValue",
+        "ssm:GetParameter"
+      ],
+      "error": "Could not connect to the endpoint URL: \"https://iam.amazonaws.com/\""
+    },
+    {
+      "actions": [
+        "kms:Decrypt",
+        "kms:Encrypt",
+        "kms:ScheduleKeyDeletion",
+        "lambda:CreateFunction",
+        "lambda:InvokeFunction",
+        "ec2:RunInstances",
+        "sts:AssumeRole",
+        "cloudtrail:StopLogging",
+        "cloudtrail:DeleteTrail"
+      ],
+      "error": "Could not connect to the endpoint URL: \"https://iam.amazonaws.com/\""
+    }
+  ],
+  "source": "AWS_SIMULATION"
+}

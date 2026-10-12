@@ -1,0 +1,78 @@
+{
+  "env_id": "ENV16",
+  "env_name": "full_enterprise",
+  "description": "Full: admin + boundary + KMS + Secrets + SSM + S3 + cross-account",
+  "experiment_id": "exp-s03-u15-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-10T05:32:16.355493+00:00",
+  "resources": {
+    "admin_role": {
+      "name": "cb3-admin-s03u15",
+      "arn": "arn:aws:iam::411480503585:role/cb3-admin-s03u15"
+    },
+    "s3_bucket": {
+      "name": "cb3-data-s03u15-503585",
+      "arn": "arn:aws:s3:::cb3-data-s03u15-503585"
+    },
+    "kms_key": {
+      "id": "42859ad7-241a-4481-9ad2-a8d0f56a13f3",
+      "arn": "arn:aws:kms:us-east-1:411480503585:key/42859ad7-241a-4481-9ad2-a8d0f56a13f3",
+      "alias": "alias/cb3-key-s03u15"
+    },
+    "secret": {
+      "name": "cb3/secret/s03u15",
+      "arn": "arn:aws:secretsmanager:us-east-1:411480503585:secret:cb3/secret/s03u15-kH3b1d"
+    },
+    "ssm_parameters": [
+      {
+        "name": "/cb3/s03u15/db-host"
+      },
+      {
+        "name": "/cb3/s03u15/api-endpoint"
+      }
+    ],
+    "cross_account_role": {
+      "name": "cb3-xacct-s03u15",
+      "arn": "arn:aws:iam::411480503585:role/cb3-xacct-s03u15",
+      "partner_role": "cb3-partner-s03u15",
+      "partner_arn": "arn:aws:iam::411480503585:role/cb3-partner-s03u15",
+      "note": "SAME-ACCOUNT cross-principal trust relationship, real multi-principal execution"
+    },
+    "permissions_boundary": {
+      "name": "cb3-boundary-s03u15",
+      "arn": "arn:aws:iam::411480503585:policy/cb3-boundary-s03u15",
+      "policy_document": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetObject",
+              "s3:ListBucket",
+              "iam:ListUsers",
+              "iam:ListRoles",
+              "iam:GetPolicy",
+              "iam:ListPolicies"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  },
+  "topology": {
+    "has_admin_role": true,
+    "has_kms": true,
+    "has_secrets_manager": true,
+    "has_ssm": true,
+    "has_lambda": false,
+    "has_permissions_boundary": true,
+    "has_cross_account_trust": true,
+    "has_s3": true,
+    "privileged_role_count": 1,
+    "sensitive_resource_count": 3,
+    "resource_count": 6
+  },
+  "environment_hash": "52db9ae824c3ffa4"
+}

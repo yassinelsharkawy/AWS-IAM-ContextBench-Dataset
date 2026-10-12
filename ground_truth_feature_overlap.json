@@ -1,0 +1,40 @@
+{
+  "capability_gain": {
+    "related_features": [
+      "policy_action_count",
+      "policy_has_wildcard_action"
+    ],
+    "independence": "GT uses security semantics not raw counts"
+  },
+  "blast_radius": {
+    "related_features": [
+      "policy_has_wildcard_resource",
+      "environment_resource_count"
+    ],
+    "independence": "GT considers multi-service scope not just wildcards"
+  },
+  "sensitivity": {
+    "related_features": [
+      "effective_sensitive_action_count"
+    ],
+    "independence": "GT uses security classification not action counting"
+  },
+  "reversibility": {
+    "related_features": [
+      "policy_action_count"
+    ],
+    "independence": "GT identifies destructive actions specifically"
+  },
+  "least_privilege": {
+    "related_features": [
+      "effective_permission_expansion"
+    ],
+    "independence": "GT scores deviation from least-privilege principle"
+  },
+  "exploitability": {
+    "related_features": [
+      "environment_reachable_privesc_paths"
+    ],
+    "independence": "GT identifies known attack paths from iam-vulnerable"
+  }
+}

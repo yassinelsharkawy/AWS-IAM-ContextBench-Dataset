@@ -1,0 +1,32 @@
+{
+  "env_id": "ENV12",
+  "env_name": "cross_account_trust",
+  "description": "Cross-account: trust policy references external account",
+  "experiment_id": "exp-s08-p11-env",
+  "account_id": "411480503585",
+  "region": "us-east-1",
+  "captured_at": "2026-09-09T20:15:39.851611+00:00",
+  "resources": {
+    "cross_account_role": {
+      "name": "cb3-xacct-s08p11",
+      "arn": "arn:aws:iam::411480503585:role/cb3-xacct-s08p11",
+      "partner_role": "cb3-partner-s08p11",
+      "partner_arn": "arn:aws:iam::411480503585:role/cb3-partner-s08p11",
+      "note": "SAME-ACCOUNT cross-principal trust relationship, real multi-principal execution"
+    }
+  },
+  "topology": {
+    "has_admin_role": false,
+    "has_kms": false,
+    "has_secrets_manager": false,
+    "has_ssm": false,
+    "has_lambda": false,
+    "has_permissions_boundary": false,
+    "has_cross_account_trust": true,
+    "has_s3": false,
+    "privileged_role_count": 0,
+    "sensitive_resource_count": 0,
+    "resource_count": 1
+  },
+  "environment_hash": "9436da42bcf5b5ba"
+}
